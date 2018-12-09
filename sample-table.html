@@ -1,0 +1,67 @@
+<table>
+<tr>
+	<td><span class="required">必須</span>問い合わせ種類</td>
+	<td>[checkbox* checkbox id:checkbox "補助金サポート希望" "パートナーコンサル希望" "その他"]</td>
+</tr>
+<tr>
+	<td><span class="required">必須</span>氏名</td>
+	<td>[text* your-name akismet:author]</td>
+</tr>
+<tr>
+	<td><span class="required">必須</span>メールアドレス</td>
+	<td>[email* your-email akismet:author_email]</td>
+</tr>
+<tr>
+	<td><span class="required">必須</span>属性</td>
+	<td>[radio e-status id:e-status use_label_element "経営者・役員" "創業予定者" "従業員" "士業・コンサル業" "その他"]</td>
+</tr>
+<tr>
+	<td>会社名（屋号）</td>
+	<td>[text work id:work]</td>
+</tr>
+<tr>
+	<td>申請予定の補助金（補助金サポート希望の場合）</td>
+	<td>[text subsidy id:subsidy]</td>
+</tr>
+<tr>
+	<td>保有資格（パートナーコンサル希望の場合）</td>
+	<td>[text card id:card]</td>
+</tr>
+<tr>
+	<td><span class="required">必須</span>メッセージ</td>
+	<td>[textarea* your-message]</td>
+</tr>
+</table>
+<p class="text-xs-center">[submit class:btn class:btn-success class:btn-lg "送信する"]</p>
+
+
+
+<table>
+<tr>
+	<td><span class="required">必須</span>氏名</td>
+	<td>[text* your-name akismet:author]</td>
+</tr>
+<tr>
+	<td><span class="required">必須</span>メールアドレス</td>
+	<td>[email* your-email akismet:author_email]</td>
+</tr>
+<tr>
+	<td><span class="required">必須</span>属性</td>
+	<td>[radio e-status id:e-status use_label_element "経営者・役員" "創業予定者" "従業員・その他"]</td>
+</tr>
+<tr>
+	<td>会社名（屋号）</td>
+	<td>[text job id:job]</td>
+</tr>
+<tr>
+	<td><span class="required">必須</span>問い合わせ種類</td>
+	<td>[select* reason id:reason include_blank "経営計画" "資金操り・資金調達" "創業" "営業・マーケティング" "人事労務" "その他"]</td>
+</tr>
+<tr>
+	<td><span class="required">必須</span>メッセージ</td>
+	<td>[textarea* your-message]</td>
+</tr>
+
+</table>
+[recaptcha id:recaptcha]
+<p class="text-xs-center">[submit class:btn class:btn-success class:btn-lg "送信する"]</p>
